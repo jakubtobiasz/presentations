@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+        @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+        @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+        body {
+            font-family: 'Droid Serif';
+            line-height: 1.5;
+        }
+        h1, h2, h3 {
+            font-family: 'Yanone Kaffeesatz';
+            font-weight: normal;
+        }
+        .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+        .inverse {
+            background: #272822;
+            color: #777872;
+            text-shadow: 0 0 20px #333;
+        }
+
+        .inverse h1, .inverse h2 {
+            color: #f3f3f3;
+            line-height: 0.8em;
+        }
+
+        a {
+            color: #9aa146;
+            text-decoration: none;
+        }
+
+        .left {
+            float: left;
+            margin-right: 2em;
+        }
+
+        .right {
+            float: right;
+            margin-left: 1em;
+        }
+
+        .avatar > img {
+            max-height: 250px;
+            border-radius: 25%;
+        }
+
+        .logos > img {
+            max-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <textarea id="source">
+        class: center, middle, inverse
+
+        # Hi, I'm Jakub 👋🏼!
+
+        ---
+
+        # Who am I?
+
+        .right.avatar[![Picture of me](https://avatars.githubusercontent.com/u/80641364?v=4)]
+
+        - PHP (Symfony) developer
+
+        ---
+
+        # Who am I?
+
+        .right.avatar[![Picture of me](https://avatars.githubusercontent.com/u/80641364?v=4)]
+
+        - PHP (Symfony) developer
+        - Technical Content Creator @ Alphpaca
+
+        .center.logos[![Alphpaca's logo](https://avatars.githubusercontent.com/u/109514288?s=200&v=4)]
+
+        ---
+
+        # Who am I?
+
+        .right.avatar[![Picture of me](https://avatars.githubusercontent.com/u/80641364?v=4)]
+
+        - PHP (Symfony) developer
+        - Technical Content Creator @ Alphpaca
+        - Member of Sylius Team
+
+        .center.logos[![Alphpaca's logo](https://avatars.githubusercontent.com/u/109514288?s=200&v=4) ![Sylius's logo](https://avatars.githubusercontent.com/u/719423?s=200&v=4)]
+
+        ---
+
+        # My experience
+
+        .left.avatar[![Picture of me](https://avatars.githubusercontent.com/u/80641364?v=4)]
+
+        - Full-time software developer since 2019
+
+        ---
+
+        # My experience
+
+        .left.avatar[![Picture of me](https://avatars.githubusercontent.com/u/80641364?v=4)]
+
+        - Full-time software developer since 2019
+        - Symfony developer since 2021
+
+        ---
+
+        # My experience
+
+        .left.avatar[![Picture of me](https://avatars.githubusercontent.com/u/80641364?v=4)]
+
+        - Full-time software developer since 2019
+        - Symfony developer since 2021
+        - Technical Content Creator since 2021
+
+        ---
+
+        # My experience
+
+        .left.avatar[![Picture of me](https://avatars.githubusercontent.com/u/80641364?v=4)]
+
+        - Full-time software developer since 2019
+        - Symfony developer since 2021
+        - Technical Content Creator since 2021
+        - Almost 1 year spent in Software House
+
+        ---
+
+        # My experience
+
+        .left.avatar[![Picture of me](https://avatars.githubusercontent.com/u/80641364?v=4)]
+
+        - Full-time software developer since 2019
+        - Symfony developer since 2021
+        - Technical Content Creator since 2021
+        - Almost 1 year spent in Software House
+        - Since mid 2022 making open-source stuff in Sylius
+
+        ---
+
+        # My experience
+
+        .left.avatar[![Picture of me](https://avatars.githubusercontent.com/u/80641364?v=4)]
+
+        - Full-time software developer since 2019
+        - Symfony developer since 2021
+        - Technical Content Creator since 2021
+        - Almost 1 year spent in Software House
+        - Since mid 2022 making open-source stuff in Sylius
+        - Over 1.5 years of doing e-commerce
+
+        ---
+
+        # Some random code
+
+        ```php
+        public function getChannel(): ChannelInterface
+        {
+            if ('cli' !== PHP_SAPI || null === $this->channelCodeFromEnv) {
+                throw new ChannelNotFoundException();
+            }
+
+            $channel = $this->channelRepository->findOneByCode($this->channelCodeFromEnv);
+
+            if (null === $channel) {
+                throw new ChannelNotFoundException();
+            }
+
+            return $channel;
+        }
+        ```
+
+        ---
+
+        # Thanks for your attention!👀
+
+        You can find me on:
+
+        👉🏼 Twitter: https://twitter.com/jakub_tobiasz <br />
+        👉🏼 GitHub: https://github.com/jakubtobiasz <br />
+        👉🏼 LinkedIn: https://linkedin.com/in/jakubtobiasz <br />
+        👉🏼 Mastodon: https://phpc.social/@jakubtobiasz
+
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js">
+</script>
+<script>
+    var slideshow = remark.create({
+        slideNumberFormat: "",
+    });
+</script>
+</body>
